@@ -70,11 +70,11 @@ public class MainActivity extends Activity {
     public void addBadgeInIcon(View view) {
         // 添加角标测试
 //        ShortcutBadger.with(getApplicationContext()).count(9);
-        BadgeUtil.setBadgeCount(getApplicationContext(), 4);
+        BadgeUtil.setBadgeCount(this, 100,R.mipmap.ic_launcher);
     }
 
     public void delBadgeInIcon(View view) {
-        BadgeUtil.resetBadgeCount(getApplicationContext());
+        BadgeUtil.resetBadgeCount(this,R.mipmap.ic_launcher);
     }
 
     /**
